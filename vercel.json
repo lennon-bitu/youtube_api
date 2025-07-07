@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+        "src": "youtube_api/wsgi.py",
+        "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "youtube_api/wsgi.py"
+        }
+    ],
+    "env": {
+        "DJANGO_SETTINGS_MODULE": "youtube_api.settings"
+    },
+    "functions": {
+        "youtube_api/wsgi.py": {
+        "maxDuration": 10
+        }
+    }
+}
