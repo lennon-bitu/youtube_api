@@ -14,10 +14,6 @@
     ],
     "env": {
         "DJANGO_SETTINGS_MODULE": "youtube_api.settings"
-    },
-    "functions": {
-        "youtube_api/wsgi.py": {
-        "maxDuration": 10
-        }
     }
+    
 }

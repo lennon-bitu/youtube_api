@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-iz50^nh%gr608v@hc(pkk++kq4&0b5m^gi+(f9obi1tjgb5o3q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -69,7 +69,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'youtube_api.wsgi.application'
+#WSGI_APPLICATION = 'youtube_api.wsgi.application'
+WSGI_APPLICATION = 'api.wsgi.app'
 
 
 # Database
